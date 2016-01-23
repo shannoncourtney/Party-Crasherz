@@ -69,6 +69,7 @@ class PartiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def party_params
-      params.require(:party).permit(:name, :date, :max_attendees, :age_range, :description, :what_to_bring, :rules, :host)
+    params.require(:party).permit(:name, :date, :max_attendees, :age_range, :description, :what_to_bring, :rules)
+      .merge(user_id: current_user.id)
     end
 end

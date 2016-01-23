@@ -37,7 +37,7 @@
 
 <p>
   <strong>Host:</strong>
-  <%= @party.host %>
+  <%= @party.user.try(:email) %>
 </p>
 
 <%= link_to 'Edit', edit_party_path(@party) %> |

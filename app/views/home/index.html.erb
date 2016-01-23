@@ -1,0 +1,16 @@
+<div class= "text-center">
+  <h1>We are <strong>PARTY CRASHERZ.</strong></h1>
+  <h3>Find a party. Crash a party.</h3>
+  <small>Are you tired of living a boring life? It's time to get out more!</small>
+
+  <div id="sign_up_buttons">
+    <% if current_user.present? %>
+    <%= link_to("Sign Out", destroy_user_session_url, method: :delete, class: "btn btn-large btn-danger") %>
+    <%= link_to("Throw a PARTY!", new_party_url, class: "btn btn-large btn-success") %>
+    <%= link_to("Find a PARTY!", parties_url, class: "btn btn-large btn-success") %>
+    <% else %>
+    <%= link_to("Sign Up", new_user_registration_url, class: "btn btn-large btn-info") %>
+    <%= link_to("Sign In", new_user_session_url, class: "btn btn-large btn-rebeccapurple") %>
+    <% end %>
+  </div>
+</div>
