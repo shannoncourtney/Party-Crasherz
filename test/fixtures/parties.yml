@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date: 2016-01-23 10:55:33
+  max_attendees: 1
+  age_range: MyString
+  description: MyText
+  what_to_bring: MyText
+  rules: MyText
+  host: 1
+
+two:
+  name: MyString
+  date: 2016-01-23 10:55:33
+  max_attendees: 1
+  age_range: MyString
+  description: MyText
+  what_to_bring: MyText
+  rules: MyText
+  host: 1
